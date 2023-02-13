@@ -9,11 +9,25 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* COMMONS */
+
+.container-top-bot{
+    width: 80%;
+    margin: 0 auto;
+    /* debug */
+    text-align: center;
+}
+
+.flex-top {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 /* VARIABLES */
 
 :root {
-    --jubotron: #B4D0E7;
+    --jubotron-header-top: #B4D0E7;
     --internal-1cube: #A2D39B;
     --external-1cube: #D1E9CD;
     --cube2: #61082B;
@@ -25,5 +39,53 @@ body {
     --cube8: #FFD830;
     --section-bot:var(--jubotron) ;
     --title-sectionbot: #630C2C;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* HEADER SECTION */
+
+/* HEADER-TOP */
+
+.header-top {
+    width: 100%;
+    height: 60px;
+    /* debug */
+    background-color: lightgray;
+}
+
+
+.main-header {
+    background-color: var(--jubotron-header-top);
+    width: 100%;
+    height: 500px;   
+    position: fixed;    /* DUBBIO CON SOTTO IL MARGINE */
+    
+    
+}
+
+.jumbotron {
+    width: 900px;
+    height: 400px;
+    background-color: #0093CE;
+    margin-top: 50px;      /* DUBBIO CON SOPRA FIXED */
+}
+
+
+.subtitle {
+    /* DEBUG */
+
+    width: 300px;
+    height: 300px;
+    background-color: rgb(128, 139, 148);
+}
+
+.jumbo {
+    /* DEBUG */
+    width: 300px;
+    height: 300px;
+    background-color: rgb(128, 139, 148);
 
 }
+
+
