@@ -1,0 +1,29 @@
+/* RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* VARIABLES */
+
+:root {
+    --jubotron: #B4D0E7;
+    --internal-1cube: #A2D39B;
+    --external-1cube: #D1E9CD;
+    --cube2: #61082B;
+    --cube3: #0093CE ;
+    --cube4: #FF1C1C ;
+    --cube5: #D5001F;
+    --cube6: var(--jubotron);
+    --cube7: #0D2481;
+    --cube8: #FFD830;
+    --section-bot:var(--jubotron) ;
+    --title-sectionbot: #630C2C;
+
+}
