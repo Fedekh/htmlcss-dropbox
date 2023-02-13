@@ -130,7 +130,8 @@ ul.right li:last-child a{
 .main-header {
     background-color: var(--main-color);
     width: 100%;
-    height: 600px;      
+    height: 600px;
+    position: relative;      
     /* debug */
     border: 1px rgba(0, 0, 0, 0) solid;  /* DEVO ADOTTARE QUESTO STRATAGEMMA, ALTRIMENTI SE LA COMMENTO NON SO PERCHE TUTTO IL JUMBO MI SI DISCOSTA DL TOP VERSO BOT */ 
 }
@@ -185,7 +186,8 @@ DEVO CAPIRE PERCHE NON FUNZIONA
 /* DOWN-ARROW FOR DOWNLOAD IN JUMBOTRON*/
 section.subtitle i{
     font-size: 4rem;
-    
+    position:absolute;
+    bottom: 10px;    
 }
 
 
@@ -210,16 +212,58 @@ section.subtitle i{
 /* FIRST SECTION */
 
 .first {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
-.season {
-    /* debug */
+.season {    
     height: 100px;
-    background-color: #A2D39B;
-    border: 1px black solid;
+    
+    /* debug */
+    /* background-color: #A2D39B; */
+    /* border: 1px black solid; */
 }
 
+.season h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.month, .year {
+    vertical-align: middle;
+}
+
+.circle, .double-circle {
+    vertical-align: middle;
+}
+
+/* SMALL RINGS OF CHOISE */
+.season .circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--button);
+    border-radius: 50%;
+    
+}
+
+/* CERCHIO INSCRITTO AL PRIMO CERCHIO, OLGA HA DETTO DI NON USARE CHECKBOX O SIMILI */
+.double-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(5px, -3px);
+}
+
+
+.year {
+    margin-left: 60px;
+}
+.year .circle{
+    border: 2px solid gray;
+    background-color: white;
+}
 
 /* CARDS FIRST SECTION */
 
@@ -227,7 +271,7 @@ section.subtitle i{
     height: 700px;
     width: calc(100% / 3);
     gap: 20px;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     border: 1px black solid;
 }
 
