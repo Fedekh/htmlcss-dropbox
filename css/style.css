@@ -25,7 +25,7 @@ ul{
 }
 
 .container-top-bot{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     /* debug */
     /* text-align: center; */
@@ -48,6 +48,13 @@ ul{
     justify-content: flex-end;
     align-items: center;
     gap: 50px;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 
@@ -109,10 +116,10 @@ ul{
     padding-right: 80px;
 }
 
-ul.right:nth-child(4) a{
+ul.right li:last-child a{
     background-color: var(--button);
     color: white;
-    
+    padding: 5px 20px;    
 }
 
 
@@ -123,23 +130,26 @@ ul.right:nth-child(4) a{
 .main-header {
     background-color: var(--main-color);
     width: 100%;
-    height: 500px;   
-    border: 1px black solid;
-
-    /* position: fixed;    DUBBIO CON SOTTO IL MARGINE */
-    
+    height: 600px;   
+    border: 1px black solid;    
     
 }
 
 .jumbotron {
     width: 900px;
-    height: 400px;
-
+    height: 500px;
+    margin-top: 50px;
     /* DEBUG */
-    background-color: #0093CE;
-    border: 1px black solid;
+    /* background-color: #0093CE; */
+    /* border: 1px black solid;     */
+}
 
-    /* margin-top: 50px;      DUBBIO CON SOPRA FIXED */
+.jumbotron h1{
+    font-size: calc(.8rem + 2vw);
+}
+
+.jumbotron .description {
+    margin: 40px 0;
 }
 
 
@@ -147,9 +157,29 @@ ul.right:nth-child(4) a{
     /* DEBUG */
     width: calc(100% / 2);
     height: 300px;
-    background-color: rgb(50, 111, 161);
-    border: 1px black solid;
+    /* background-color: rgb(50, 111, 161); */
+    /* border: 1px black solid; */
+}
 
+
+/* BUTTON TRY FREE JUMBOTRON */
+#try {
+    background-color: var(--button);
+    color: white;
+    padding: 5px 20px;
+}
+
+
+/* 
+DEVO CAPIRE PERCHE NON FUNZIONA
+.subtitle:nth-child(2) > a{
+    background-color: var(--button);
+    color: white;
+} */
+
+section.subtitle i{
+    font-size: 4rem;
+    
 }
 
 .jumbo {
