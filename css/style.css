@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -18,9 +22,19 @@ body {
     text-align: center;
 }
 
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .flex-top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -55,11 +69,15 @@ body {
 }
 
 
+/* HEADER/JUMBOTRON */
+
 .main-header {
     background-color: var(--jubotron-header-top);
     width: 100%;
     height: 500px;   
-    position: fixed;    /* DUBBIO CON SOTTO IL MARGINE */
+    border: 1px black solid;
+
+    /* position: fixed;    DUBBIO CON SOTTO IL MARGINE */
     
     
 }
@@ -67,17 +85,22 @@ body {
 .jumbotron {
     width: 900px;
     height: 400px;
+
+    /* DEBUG */
     background-color: #0093CE;
-    margin-top: 50px;      /* DUBBIO CON SOPRA FIXED */
+    border: 1px black solid;
+
+    /* margin-top: 50px;      DUBBIO CON SOPRA FIXED */
 }
 
 
 .subtitle {
     /* DEBUG */
-
     width: 300px;
     height: 300px;
     background-color: rgb(128, 139, 148);
+    border: 1px black solid;
+
 }
 
 .jumbo {
@@ -85,7 +108,82 @@ body {
     width: 300px;
     height: 300px;
     background-color: rgb(128, 139, 148);
+    border: 1px black solid;
 
 }
 
+/* ----------------------------------------------------------------------------- */
+
+/* MAIN */
+
+/* FIRST SECTION */
+
+.season {
+    /* debug */
+    height: 100px;
+    background-color: #A2D39B;
+    border: 1px black solid;
+}
+
+
+/* CARDS FIRST SECTION */
+
+.single, .team, .agency {
+    height: 700px;
+    width: calc(100% / 3);
+    gap: 20px;
+    background-color: lightgray;
+    border: 1px black solid;
+}
+
+
+.agency2 {
+    /* debug */
+    width: 100%;                              
+    height: 250px;   /* E' POSSIBILE INDICARE COME ALTEZZA, LA LARGHEZZA DELLA CARD SUPERIORE?*/
+    background-color: lightgray;
+    border: 1px black solid;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* SECOND SECTION */
+
+.partner {
+    /* deug */
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    background-color: lightgray;
+    border: 1px black solid;
+}
+
+.imagine {
+
+    width: calc(100% / 3 * 2);
+    /* debug */
+    height: 100%;
+    background-color: lightgray;
+    border: 1px black solid;
+    
+}
+
+.description {
+    width: calc(100% / 3);
+    /* debug */
+    height: 100%;
+    background-color: lightgray;
+    border: 1px black solid;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* THIRD SECTION */
+
+/* CARDS */
+
+.card {
+    /* debug */
+
+}
 
