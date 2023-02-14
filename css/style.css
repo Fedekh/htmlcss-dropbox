@@ -671,7 +671,7 @@ div #eight {
     padding-top: 30px;
     /* debug */
     height: 400px;
-    background-color: #A2D39B;
+    /* background-color: #A2D39B; */
 }
 
 .ask ul {
@@ -681,10 +681,19 @@ div #eight {
 
 .ask li {
     padding: 20px 0;
-    border: 1px solid black;
-
-
+    border-top: 1px solid black;
 }
+
+.ask li:last-child{
+    border-bottom:  1px solid black;
+}
+
+.ask i {
+    padding-right: 50px;
+}
+
+
+
 
 /* ------------------------------------------------------------------------------ */
 
