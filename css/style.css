@@ -483,8 +483,9 @@ div .user {
 
 .third h2, .third .footer-section {
     width: 100%;
-    background-color: lightcoral;
-    border: 1px solid black;
+    /* debug */
+    /* background-color: lightcoral;
+    border: 1px solid black; */
 }
 
 
@@ -493,13 +494,25 @@ div .user {
 
 
 .card {
-    /* debug */
     width: calc(100% / 3);
-    background-color: lightgreen;
+    /* debug */
+    /* background-color: lightgreen; */
     /* height: 300px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
+.card h2, .card p {
+    margin: 30px 0;
+}
+
+.footer-section {
+    padding: 70px 0;
+}
+
+.footer-section a {
+    position: relative;
+    top: 30px;
+}
 
 /* -------------------------------------------------------------------- */
 
