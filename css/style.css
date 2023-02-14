@@ -15,14 +15,28 @@ body {
 
 /* COMMONS */
 
-a{
+/* a{
     text-decoration: none;
     color: black;
-}
+} */
 
 ul{
     list-style-type: none;
 }
+
+/* BUTTON TRY */
+a.try {
+    background-color: var(--button);
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;    
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
 
 .container-top-bot{
     width: 80%;
@@ -70,7 +84,12 @@ ul{
     flex-wrap: wrap;
 }
 
-
+.flex-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
 
 
 /* VARIABLES */
@@ -89,7 +108,11 @@ ul{
     --cube8: #FFD830;
     --section-bot:var(--main-color) ;
     --title-sectionbot: #630C2C;
+    --share: <i class="fa-solid fa-share-nodes"></i>;
 }
+
+
+
 
 /* ---------------------------------------------------------------------------- */
 
@@ -167,21 +190,21 @@ ul.right li:last-child a{
 }
 
 
-/* 
-DEVO CAPIRE PERCHE NON FUNZIONA
-.subtitle:nth-child(2) > a{
-    background-color: var(--button);
+
+/* DEVO CAPIRE PERCHE NON FUNZIONA */
+.subtitle :nth-child(2) {
+    background-color: var(--button) ;
     color: white;
-} ALTERNATIVA DI SEGUITO*/
+} 
 
-
+/* 
 /* BUTTON TRY-FREE JUMBOTRON */
-#try {
+/* #try {
     background-color: var(--button);
     color: white;
     padding: 5px 20px;
-}
-
+} */
+ 
 
 /* DOWN-ARROW FOR DOWNLOAD IN JUMBOTRON*/
 section.subtitle i{
@@ -242,7 +265,7 @@ section.subtitle i{
     width: 20px;
     height: 20px;
     background-color: var(--button);
-    border-radius: 50%;
+    bor.der-radius: 50%;
     
 }
 
@@ -268,20 +291,89 @@ section.subtitle i{
 /* CARDS FIRST SECTION */
 
 .single, .team, .agency {
+    margin: 50px 0;
     height: 700px;
-    width: calc(100% / 3);
+    width: calc(100% / 3 - (40px / 3));
     gap: 20px;
     /* background-color: lightgray; */
     border: 1px black solid;
+    padding-left: 20px;
 }
 
 
 .agency2 {
     /* debug */
     width: 100%;                              
-    height: 250px;   /* E' POSSIBILE INDICARE COME ALTEZZA, LA LARGHEZZA DELLA CARD SUPERIORE?*/
+    height: 250px;   
     background-color: lightgray;
     border: 1px black solid;
+}
+
+.feature {
+    margin-top: 50px;
+}
+
+.feature .type {
+    margin: -15px 0 0 20px;
+    color: grey;
+}
+
+
+.buy .try {
+    background-color: var(--button);
+    padding: 10px 20px;
+    
+}
+
+.buy li {
+    margin: 20px 0 0 20px;
+
+}
+
+.caracteristic > li:first-child:before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f007";    
+}
+
+.caracteristic > li:nth-child(2):before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f07b";    
+}
+
+.caracteristic > li:nth-child(3):before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f1e0";    
+}
+
+
+span.single {
+    margin: 0 auto;
+    
+}
+
+.rule {
+    width: 20%;
+    color: grey;
+    margin: 20px 0 0 20px;
+}
+
+.feature .point {
+    margin: 10px 0 0 20px;
+}
+
+.important-point li::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: var(--button);  
+    margin: 0 0 10px 20px;
+}
+
+.important-point li{
+    margin: 10px 0;
 }
 
 /* ---------------------------------------------------------------------------- */
