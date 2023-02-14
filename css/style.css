@@ -647,10 +647,26 @@ div #eight {
     width: 100%;
     background-color:var(--main-color);
     /* debug; */
-    height: 150px;
-    
+    height: 150px;    
 }
 
+.align-items {
+    align-items: center;
+    height: 150px;    
+
+}
+
+
+.tryfree h2 {
+    color: #61123C;
+    font-size: 2rem;
+    width: 50%;
+}
+
+.tryfree button {
+    padding: 10px 40px;
+    border: none;
+}
 .sixth {
     padding-top: 30px;
     /* debug */
