@@ -122,13 +122,17 @@ header a {
 /* HEADER-TOP */
 
 .header-top {
-    position: relative;
-    z-index: 99;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     height: 60px;
     /* debug */
     background-color: lightgray;
     vertical-align: middle;
+    box-shadow: 0 2px 30px grey;
 }
 
 .left, .right{
@@ -138,14 +142,25 @@ header a {
     /* border-bottom: 1px solid black; */
 
 }
-
-.header-top li {
-    display: inline-block;
+.header-top ul{
+    display: flex;
+    align-items: center;
+    /* height: 60px; */
     
 }
 
+.header-top li {
+    display: flex;
+    height: 60px;
+    /* display: flex; */
+    align-items: center;
+    
+} 
+
+
+
 /* NON SONO RIUSCITO A FARGLI LA SOTTOLINEATURA IN BASSO ALL'HEADER, MA COSI SEMBRA SIA PIU REALISTICO */
-.left li:hover a , .right li:hover a{
+.left  li:hover:not(:nth-child(1)) , .right li:hover:not(:nth-child(4)) {
     border-bottom: 1px solid black;
 
 }
@@ -510,6 +525,14 @@ div .user {
     top: 30px;
 }
 
+/* BONUS *, SICCOME RISCHIO DI CECARMI, IMMAGINO DEBBA AUMENTARE LA BRIGHTNESS, MA SICCOME
+    NON LA VEDO, METTO TRASFORMAZIONE IN VERDE E VIA*/
+.description-second-section a:hover{
+        color: #48c24e;
+    
+}
+
+
 
 /* ---------------------------------------------------------------------------- */
 
@@ -549,7 +572,7 @@ div .user {
     padding: 70px 0;
 }
 
-*h2 {
+.footer-section h2 {
     font-size: 2.5rem;
 }
 
@@ -570,11 +593,13 @@ div .user {
 
 }
 
+/* LEFT COLUMN */
 .fourth .logo {
     width: calc(100% /3);
     height: calc(100vw /3);
 }
 
+/* RIGHT COLUMN */
 .fourth .logo-right{
     width: calc(100% /3);
     height: calc(100vw /3);
@@ -736,8 +761,18 @@ div #eight {
     padding-right: 50px;
 }
 
+p.hidden{
+    display: none;
+    margin: 20px;
+}
 
+.hid:hover .hidden{
+    display: block;    
+}
 
+.hid:hover i{
+    transform: rotate(180deg);
+}
 
 /* ------------------------------------------------------------------------------ */
 
@@ -791,4 +826,10 @@ footer .block {
 
 .language a{
     color: white;
+}
+
+
+/* BONUS FOOTER, PER SALVAGUARDARE GLI OCCHI IL COLORE E' VERDE */
+.minor-list li:hover a{
+    color: greenyellow;
 }
