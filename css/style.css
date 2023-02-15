@@ -122,14 +122,32 @@ header a {
 /* HEADER-TOP */
 
 .header-top {
+    position: relative;
+    z-index: 99;
     width: 100%;
     height: 60px;
     /* debug */
     background-color: lightgray;
+    vertical-align: middle;
 }
 
 .left, .right{
     width: 50%;
+    vertical-align: middle;
+    height: 100%;
+    /* border-bottom: 1px solid black; */
+
+}
+
+.header-top li {
+    display: inline-block;
+    
+}
+
+/* NON SONO RIUSCITO A FARGLI LA SOTTOLINEATURA IN BASSO ALL'HEADER, MA COSI SEMBRA SIA PIU REALISTICO */
+.left li:hover a , .right li:hover a{
+    border-bottom: 1px solid black;
+
 }
 
 .left {
@@ -143,7 +161,8 @@ header a {
 ul.right li:last-child a{
     background-color: var(--button);
     color: white;
-    padding: 5px 20px;    
+    padding: 5px 20px;
+    height: 60px;    
 }
 
 
