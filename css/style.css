@@ -159,11 +159,17 @@ header a {
 
 
 
-/* NON SONO RIUSCITO A FARGLI LA SOTTOLINEATURA IN BASSO ALL'HEADER, MA COSI SEMBRA SIA PIU REALISTICO */
+/* BONUS HEADER TOP */
 .left  li:hover:not(:nth-child(1)) , .right li:hover:not(:nth-child(4)) {
     border-bottom: 1px solid black;
-
 }
+
+/* BONUS HEADER TOP */
+
+.flex-header-right:last-child:hover {    
+    filter: brightness(90%);        
+}
+
 
 .left {
     padding-left: 50px;
@@ -177,7 +183,7 @@ ul.right li:last-child a{
     background-color: var(--button);
     color: white;
     padding: 5px 20px;
-    height: 60px;    
+    /* height: 60px;     */
 }
 
 
@@ -232,13 +238,7 @@ ul.right li:last-child a{
     color: white;
 } 
 
-/* 
-/* BUTTON TRY-FREE JUMBOTRON */
-/* #try {
-    background-color: var(--button);
-    color: white;
-    padding: 5px 20px;
-} */
+
  
 
 /* DOWN-ARROW FOR DOWNLOAD IN JUMBOTRON*/
@@ -261,6 +261,12 @@ section.subtitle i{
     border: 1px black solid; */
 }
 
+
+/* BONUS JUMBOTRON */
+
+.jumbotron .try:hover {
+    filter: brightness(90%);
+} 
 
 
 /* ----------------------------------------------------------------------------- */
@@ -373,9 +379,14 @@ div .user {
 
 .buy .try {
     background-color: var(--button);
-    padding: 10px 20px;
-        
+    padding: 10px 20px;        
 }
+
+.first .try:hover {    
+        filter: brightness(90%);
+    
+}
+
 
 .buy li {
     margin: 20px 0 0 20px;
@@ -489,15 +500,17 @@ div .user {
 .partner {
     margin-top: 50px;
     width: 100%;
-    /* height: 500px; */
+
     /* deug */
+    /* height: 500px; */
     /* background-color: lightgray; */
     /* border: 1px black solid; */
 }
 
 .imagine {    
     width: calc(100% / 3 * 2);
-        /* debug */
+    /* debug */
+
     /* height: 100%; */
     /* background-color: lightgray; */
     /* border: 1px black solid; */
@@ -518,6 +531,7 @@ div .user {
 }
 
 .description-second-section a{
+    color: black;
     text-decoration: none;
     padding: 10px 15px;
     border: 2px solid lightgray;
@@ -525,11 +539,9 @@ div .user {
     top: 30px;
 }
 
-/* BONUS *, SICCOME RISCHIO DI CECARMI, IMMAGINO DEBBA AUMENTARE LA BRIGHTNESS, MA SICCOME
-    NON LA VEDO, METTO TRASFORMAZIONE IN VERDE E VIA*/
+/* BONUS OPACITY*/
 .description-second-section a:hover{
-        color: #48c24e;
-    
+        opacity: 0.5;    
 }
 
 
@@ -736,6 +748,17 @@ div #eight {
     padding: 10px 40px;
     border: none;
 }
+
+
+/* BONUS BUTTON, NON RICORDO PERFETTAMENTE L'EFFETTO */
+.tryfree a:hover button{
+    opacity: 0.8;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+
+/* SICTH SECTION  */
 .sixth {
     padding-top: 30px;
     /* debug */
@@ -761,6 +784,8 @@ div #eight {
     padding-right: 50px;
 }
 
+
+/* BONUS SIXTH SECTION  */
 p.hidden{
     display: none;
     margin: 20px;
