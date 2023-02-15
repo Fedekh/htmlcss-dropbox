@@ -393,50 +393,20 @@ div .user {
 
 }
 
-.subscription :nth-child(2n+1) .buy{
+.subscription :nth-child(3) .buy{
     /* background-color: green; */
     margin: 20px;
+}
 
+.subscription :nth-child(1) .buy{
+    margin: 40px;
+}
+
+.subscription :nth-child(2) .buy{
+    margin-bottom: 20px;
 }
 
 
-
-
-/* ICONS BEFORE UL FIRST SUBSCRIPTION
-.caracteristic > li:nth-child(2):before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f07b";    
-}
-
-.caracteristic > li:nth-child(3):before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f1e0";    
-}
-
-.single .caracteristic > li:first-child:before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f007";    
-}
-
-
-/* ICONS BEFORE UL SECOND SUBSCRIPTION */
-
-/* .team .caracteristic > li:first-child:before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f0c0";    
-}
-
-/* ICONS BEFORE UL THIRDSUBSCRIPTION */
-
-/* .agency .caracteristic > li:first-child:before {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f0c0";    
-}  */
 
 .agency .price a {
     text-decoration: none;
@@ -451,6 +421,7 @@ div .user {
 .feature .point {
     margin: 10px 0 0 35px;
 }
+
 
 .important-point li::before{
     font-family: "Font Awesome 6 Free";
