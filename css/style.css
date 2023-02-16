@@ -204,6 +204,7 @@ ul.right li:last-child a{
     width: 900px;
     height: 500px;
     margin-top: 50px;
+    padding-top: 25px;
     /* DEBUG */
     /* background-color: #0093CE; */
     /* border: 1px black solid;     */
